@@ -1,7 +1,13 @@
+import { createErrorObjectProps } from "./types/createErrorObjectProps";
 // Linting functions
 
 // Generic function for creating an error object to pass to the app.
-export function createErrorObject(node, type, message, value?) {
+export function createErrorObject(
+  node,
+  type: createErrorObjectProps["type"],
+  message,
+  value?
+) {
   let error = {
     message: "",
     type: "",

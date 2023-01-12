@@ -7,6 +7,7 @@ import {
   // customCheckTextFills,
   // uncomment this as an example of a custom lint function ^
 } from "./lintingFunctions";
+import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
@@ -408,6 +409,7 @@ figma.ui.onmessage = msg => {
     // We could also comment out checkFills and use a custom function instead
     // Take a look at line 122 in lintingFunction.ts for an example.
     // customCheckTextFills(node, errors);
+    invalidTextFills(node, errors);
     checkEffects(node, errors);
     checkStrokes(node, errors);
 
