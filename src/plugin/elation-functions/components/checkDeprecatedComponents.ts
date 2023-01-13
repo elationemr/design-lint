@@ -6,9 +6,12 @@ export default function checkDeprecatedComponents(node, errors) {
   if (node.mainComponent.remote) {
     const name: string = node.name;
     const mainComponentName = node.mainComponent.name;
+    const mainComponentDescription = node.mainComponent.description;
+
     if (
       mainComponentName.toLocaleLowerCase().includes("deprecated") ||
-      mainComponentName.includes("⚠️")
+      mainComponentName.includes("⚠️") ||
+      mainComponentDescription.includes("⚠️")
     ) {
       return errors.push(
         createErrorObject(
