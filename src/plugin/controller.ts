@@ -7,9 +7,10 @@ import {
   // customCheckTextFills,
   // uncomment this as an example of a custom lint function ^
 } from "./lintingFunctions";
+import checkDeprecatedComponents from "./elation-functions/components/checkDeprecatedComponents";
+import checkInvalidShapeFills from "./elation-functions/shapes/checkInvalidShapeFills";
 import checkMultipleFills from "./elation-functions/generic/checkMultipleFills";
 import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
-import checkInvalidShapeFills from "./elation-functions/shapes/checkInvalidShapeFills";
 import vitalChecks from "./elation-functions/generic/vitalChecks";
 
 figma.showUI(__html__, { width: 360, height: 580 });
@@ -320,7 +321,9 @@ figma.ui.onmessage = msg => {
       case "SECTION": {
         return lintSectionRules(node);
       }
-      case "INSTANCE":
+      case "INSTANCE": {
+        return lintInstanceRules(node);
+      }
       case "RECTANGLE": {
         return lintRectangleRules(node);
       }
@@ -358,6 +361,8 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
+    console.log("test component");
+    checkDeprecatedComponents(node, errors);
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
     checkInvalidShapeFills(node, errors);
@@ -374,6 +379,8 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
+    console.log("test variant");
+    checkDeprecatedComponents(node, errors);
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
     checkInvalidShapeFills(node, errors);
@@ -439,6 +446,23 @@ figma.ui.onmessage = msg => {
 
     checkEffects(node, errors);
     checkStrokes(node, errors);
+
+    return errors;
+  }
+
+  function lintInstanceRules(node) {
+    let errors = [];
+
+    checkFills(node, errors);
+
+    checkDeprecatedComponents(node, errors);
+    checkMultipleFills(node, errors);
+    vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
+
+    checkRadius(node, errors, borderRadiusArray);
+    checkStrokes(node, errors);
+    checkEffects(node, errors);
 
     return errors;
   }
