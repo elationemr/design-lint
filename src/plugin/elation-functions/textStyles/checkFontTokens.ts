@@ -14,14 +14,16 @@ export default function checkFontTokens(node, errors) {
     ...allFontTokens
   ];
 
-  console.log("node.textStyleId =>", node.textStyleId);
-
   const normalizedTextStyleID: NormalizedFillStyleID = normalizeStyleKey(
     node.textStyleId
   );
 
   // Error if fill uses an invalid color token
-  if (!validFontTokens.some(token => token.id === normalizedTextStyleID)) {
+  if (
+    !validFontTokens.some(
+      token => normalizeStyleKey(token.id) === normalizedTextStyleID
+    )
+  ) {
     return errors.push(
       createErrorObject(
         node,
