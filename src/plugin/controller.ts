@@ -9,7 +9,7 @@ import {
 } from "./lintingFunctions";
 import checkMultipleFills from "./elation-functions/generic/checkMultipleFills";
 import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
-import checkDeprecatedColors from "./elation-functions/generic/checkDeprecatedColors";
+import vitalChecks from "./elation-functions/generic/vitalChecks";
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
@@ -358,9 +358,7 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
-    if (node.fillStyleId !== "") {
-      checkDeprecatedColors(node, errors);
-    }
+    vitalChecks(node, errors);
 
     checkRadius(node, errors, borderRadiusArray);
     checkEffects(node, errors);
@@ -375,9 +373,7 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
-    if (node.fillStyleId !== "") {
-      checkDeprecatedColors(node, errors);
-    }
+    vitalChecks(node, errors);
 
     return errors;
   }
@@ -397,9 +393,6 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
-    if (node.fillStyleId !== "") {
-      checkDeprecatedColors(node, errors);
-    }
 
     checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -414,9 +407,7 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
-    if (node.fillStyleId !== "") {
-      checkDeprecatedColors(node, errors);
-    }
+    vitalChecks(node, errors);
     // For some reason section strokes aren't accessible via the API yet.
     // checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -435,9 +426,9 @@ figma.ui.onmessage = msg => {
     // customCheckTextFills(node, errors);
     checkMultipleFills(node, errors);
 
+    vitalChecks(node, errors);
     if (node.fillStyleId !== "") {
       invalidTextFills(node, errors);
-      checkDeprecatedColors(node, errors);
     }
 
     checkEffects(node, errors);
@@ -452,9 +443,7 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
-    if (node.fillStyleId !== "") {
-      checkDeprecatedColors(node, errors);
-    }
+    vitalChecks(node, errors);
 
     checkRadius(node, errors, borderRadiusArray);
     checkStrokes(node, errors);
@@ -471,9 +460,7 @@ figma.ui.onmessage = msg => {
       checkFills(node, errors);
 
       checkMultipleFills(node, errors);
-      if (node.fillStyleId !== "") {
-        checkDeprecatedColors(node, errors);
-      }
+      vitalChecks(node, errors);
 
       checkStrokes(node, errors);
       checkEffects(node, errors);
@@ -488,9 +475,7 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
-    if (node.fillStyleId !== "") {
-      checkDeprecatedColors(node, errors);
-    }
+    vitalChecks(node, errors);
     checkStrokes(node, errors);
     checkEffects(node, errors);
 
