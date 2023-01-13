@@ -1,4 +1,5 @@
 import { createErrorObject } from "../../lintingFunctions";
+import isColorDeprecated from "../utils/isColorDeprecated";
 import normalizeStyleKey from "../utils/normalizeStyleKey";
 import { categorizedTokens, Token } from "../../data/allColorTokens";
 
@@ -6,7 +7,7 @@ import { categorizedTokens, Token } from "../../data/allColorTokens";
  * Check that text layers only use valid (i.e., intended for text) color tokens.
  */
 export default function invalidTextFills(node, errors) {
-  const fillsToCheck: ReadonlyArray<Token> = [
+  const invalidColorTokens: ReadonlyArray<Token> = [
     ...categorizedTokens.surface,
     ...categorizedTokens.border
   ];
@@ -28,8 +29,8 @@ export default function invalidTextFills(node, errors) {
 
   // If the node (layer) has a fill style, then check to see if there's an error.
   if (nodeFillStyle !== "") {
-    console.log("node =>", node);
-    if (fillsToCheck.some(token => token.id === nodeFillStyle)) {
+    // Error if fill uses an invalid color token
+    if (invalidColorTokens.some(token => token.id === nodeFillStyle)) {
       const styleName = figma.getStyleById(node.fillStyleId).name;
 
       return errors.push(
@@ -37,7 +38,21 @@ export default function invalidTextFills(node, errors) {
           node,
           "fill",
           "Invalid text color",
-          `${styleName} is an invalid text color`
+          `${styleName} is inappropriate for text`
+        )
+      );
+    }
+
+    // Error if fill uses an deprecated color token
+    if (isColorDeprecated(nodeFillStyle)) {
+      const styleName = figma.getStyleById(node.fillStyleId).name;
+
+      return errors.push(
+        createErrorObject(
+          node,
+          "fill",
+          "Deprecated color",
+          `${styleName} is invalid in production`
         )
       );
     }

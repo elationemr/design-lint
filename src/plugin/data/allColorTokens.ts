@@ -834,3 +834,276 @@ export const categorizedTokens: TokenGroup = {
     }
   ]
 };
+
+export const deprecatedColorTokens: ReadonlyArray<Token> = [
+  { id: "ce6307a13a605ffa786802931ccb2d77c47c5894", name: "vds-black" },
+  { id: "2bf10ebd73ce70b417cfe46e1580c2f5825e5651", name: "vds-white" },
+  { id: "f32f141e59887451a82944f582d576449c4e6581", name: "vds-off-white" },
+  { id: "286a78c0e90bcf7455fdca653b622bd0723ce686", name: "vds-comments" },
+  { id: "29a861b7af762df2f566672690042fc34ba657f8", name: "vds-dark-gray1" },
+  { id: "09a3a237180dc9d28a1d7c70d72147f96a25a5b4", name: "vds-dark-gray2" },
+  { id: "510940080bdc0f514a4622d1008815552e07bc60", name: "vds-dark-gray3" },
+  { id: "288743416be0591593597963ba0e6e04bc278a13", name: "vds-dark-gray4" },
+  { id: "91fe67fc4792fd037bfb5b76acd7c15d38ab51c5", name: "vds-dark-gray5" },
+  { id: "7a7d9188eecd5ca29f6d425257cfa7c7807c6211", name: "vds-mid-gray1" },
+  { id: "af7121e773f7038df6f13a6461ce700958ddf4fc", name: "vds-mid-gray2" },
+  { id: "3cf87d92b7112ee67810d9292e47cfdcd239ade6", name: "vds-mid-gray3" },
+  { id: "496a464d3ba80d86f8ad7645387be87b096c7443", name: "vds-mid-gray4" },
+  { id: "2be0ced4e7fd5d7479283721b0509aff5f9236e6", name: "vds-mid-gray5" },
+  { id: "18ae1c116c6726bdffa090d4b77d42f6d0bbe3eb", name: "vds-light-gray1" },
+  { id: "f680d5a6d8470c5ea1ea5d4303a1c8861914bb78", name: "vds-light-gray2" },
+  { id: "c345e638f1ab641f0c7d3eb45e95f7dcbc235384", name: "vds-light-gray3" },
+  { id: "eb5fe46cc0c6cee15aa1a5a4f82a82d4d98717e4", name: "vds-light-gray4" },
+  { id: "f7981c6de85ae8989ac375088e8d0fa64d8f44b7", name: "vds-light-gray5" },
+  { id: "5ea76a16644ae2537de80584baed2a5ea139bc9e", name: "vds-elation-blue" },
+  { id: "759cc982fe1d2b061bf9eea70069552e50767f61", name: "vds-mid-blue" },
+  { id: "155a4ce251f3f7c9944979e1bab518ae11451d0b", name: "vds-deep-blue" },
+  {
+    id: "4066a62f0606f7c94a8af67f032f36799f4a031b",
+    name: "vds-elation-orange"
+  },
+  { id: "ef7978396db51e7b8d538000ea29ee6b3a0cf420", name: "vds-mid-orange" },
+  { id: "8c4e40eb6de604461845574cb53a9e89d4b8120a", name: "vds-deep-orange" },
+  { id: "6fbc54f2ef605705f605c27c4616a25f4f9d117b", name: "vds-green" },
+  { id: "539250a9680a0092096ba0de7adab84e7faa0518", name: "vds-yellow" },
+  { id: "dabc093c84c0c87e91d705222f137803ffa13b67", name: "vds-red" },
+  { id: "d3fc4397b0378d23d32412eeb99a362d626118c7", name: "vds-mid-red" },
+  { id: "7e5964c3cc58c349ecd71eafe09ef15dc0db2bab", name: "vds-deep-red" },
+  { id: "891c56b8fe24f1f93112f7e7869856145f375129", name: "vds-light-red" },
+  {
+    id: "01b447775f63225b426e5f812f92124277e0281f",
+    name: "vds-turquoise-dark"
+  },
+  {
+    id: "339929c06100bbdfd53c913e6c5a1e00907b268a",
+    name: "vds-turquoise-light"
+  },
+  { id: "166a769d01920e3a8e4398faed656a27083b756e", name: "vds-lily-dark" },
+  { id: "cbd834ee47320e7f9d467705f30f1f50e54fe798", name: "vds-lily-light" },
+  { id: "e7d4cd54669728851c4076d6304d86afd5f53d29", name: "vds-leather-dark" },
+  { id: "fdfa790fa12c20b207d09b63b24b4610b99157f0", name: "vds-leather-light" },
+  {
+    id: "c7723ba98bc1a3f135fab17b94d76c915f9d70d3",
+    name: "vds-periwinkle-dark"
+  },
+  {
+    id: "6720d8545372e2d5f053c42c72721167798e15cb",
+    name: "vds-periwinkle-light"
+  },
+  { id: "7157dd0a75109f3529fa00d62033e76871884cc6", name: "vds-carrot-dark" },
+  { id: "959b5e04016f20e5c76d2dac78208f94c9a71d46", name: "vds-carrot-light" },
+  { id: "88592e0cce2c36c7bf12c2fb6823e2519bc74638", name: "vds-lavender-dark" },
+  {
+    id: "0ea6b1d095438d13310ea71dd226ff733bb376ff",
+    name: "vds-lavender-light"
+  },
+  { id: "cf2a2d3502c69eb5412003e4a75eb51109d7fe71", name: "vds-pink-dark" },
+  { id: "1858795a1891d98f75aef9c64909aa45f219caaf", name: "vds-pink-light" },
+  { id: "1abeed349c4eb33f772785c4537edad67520be51", name: "vds-amber-dark" },
+  { id: "75e91a56ec91c0b2e27e6d6a91975e17971d2fb6", name: "vds-amber-light" },
+  { id: "82dee58bd4cc49378b474031cc922b93a6a45ccf", name: "vds-aqua-dark" },
+  { id: "669f5e3353f9d331cb84ef4f98c0a0bed5121a1c", name: "vds-aqua-light" },
+  { id: "e2e8058e64cf000b68668cc1b11909efef2d1316", name: "vds-olive-dark" },
+  { id: "fe2deff531d03df848e032f89039eb271e9d4e9e", name: "vds-olive-light" },
+  {
+    id: "ef91be3161fce15e54a24f31f7b65e4495ef8234",
+    name: "vds-coral-olivine-accent"
+  },
+  {
+    id: "c58d630d8a1b0efc747a8c534ea5267d9dbfd8f4",
+    name: "vds-elation-blue-olivine-accent"
+  },
+  {
+    id: "6b4ac3f052f54435b8c39cd4446ec7a149fe5d5a",
+    name: "vds-navy-olivine-text"
+  },
+  {
+    id: "c98bdd78f5ab9575e45b1e00df4c49657d1f2002",
+    name: "vds-white-olivine-text-bg"
+  },
+  {
+    id: "ee14e45cb916e18a379ab59f35ba458459ad6a15",
+    name: "vds-grey-olivine-text"
+  },
+  {
+    id: "7b841a35894253ff6514fe837900c02c30ff8d3c",
+    name: "vds-cloud-blue-olivine-bg"
+  },
+  {
+    id: "d151fc348845e3bc75636367de731892509168d0",
+    name: "vds-warm-yellow-olivine-bg"
+  },
+  {
+    id: "f29e0b46e14f9591ebc5845710c111e225e62421",
+    name: "vds-light-elation-blue-olivine-bg"
+  },
+  {
+    id: "b94c6da358ffb7b4e148207cb714e01286f877e7",
+    name: "vds-dark-spruce-olivine-bg"
+  },
+  {
+    id: "79f186db6a3643071f56bc04a88faeb3864899da",
+    name: "vds-med-elation-blue-olivine-icons"
+  },
+  {
+    id: "2ac628eb386962dfbf557838e2fe0906a64e20f0",
+    name: "vds-medium-coral-olivine-icons"
+  },
+  {
+    id: "f6af263850b6df8038f32c9378004bfae4c97646",
+    name: "vds-dusty-navy-olivine-icons"
+  },
+  {
+    id: "a27b07f078d2dfc4aee45395bb6d9e7f2c931640",
+    name: "vds-light-grey-olivine-icons"
+  },
+  {
+    id: "c8b0225347549bda272525d58e61c76bd7b6f6dd",
+    name: "vds-coral-accessible"
+  },
+  { id: "0426143e86d03fbb99435758c6e22fb35b2a755d", name: "vds-comments" },
+  {
+    id: "6fe91ae479eb16889173d1d001c4a998f53979d1",
+    name: "vds-elation-blue"
+  },
+  { id: "254c2069d90281d0d6dc8fdc1b0b9c6705422b65", name: "vds-mid-blue" },
+  { id: "2f45b6211ee436974b5111c71cdd6e3f53c5f459", name: "vds-deep-blue" },
+  { id: "ce737f150efbad37be298a3e4e055da3fae0e70a", name: "vds-orange" },
+  {
+    id: "02b50ee0c22cd0ddcf9509f05415d6d158437deb",
+    name: "vds-mid-orange"
+  },
+  {
+    id: "2324ed60be3a82c21612215467aa945433acdff1",
+    name: "vds-deep-orange"
+  },
+  { id: "8f6361c057804684edd868dc213d8296fbc68a1c", name: "vds-black" },
+  { id: "5d1f7b1b37658031bea9a5748c30a75e8bb3233f", name: "vds-white" },
+  { id: "0e8fc74eed57b23722de43457324eb6dac039eec", name: "vds-off-white" },
+  { id: "6c9bee11a0aa3061ba2d05227d6e79b8be075987", name: "vds-green" },
+  { id: "08ea1eef1b0c3a0c5118c657f988d8ec77c19548", name: "vds-yellow" },
+  { id: "e14789bf1c8dc5246123ab5f71f937cd582ca706", name: "vds-red" },
+  { id: "5c7424945a32691cb938a82160b5832e8798bebf", name: "vds-mid-red" },
+  { id: "2b39a209ca389f8572b3bc33c7d1f781092477a4", name: "vds-dark-red" },
+  { id: "c5d9b104b82d9dab2483eb2acff2f02f3d2e7e74", name: "vds-light-red" },
+  {
+    id: "24df8ed78e2b24241ae47d7cd2150abeae3f15c0",
+    name: "vds-dark-gray1"
+  },
+  {
+    id: "2277fed95dce5f4e4b627bea75e9c6f0f07d928c",
+    name: "vds-dark-gray2"
+  },
+  {
+    id: "b63aba861ff253adc328396f33c7a07a1709c805",
+    name: "vds-dark-gray3"
+  },
+  {
+    id: "9203a1eae0316f9dcebaf25860dbdfe58f890992",
+    name: "vds-dark-gray4"
+  },
+  {
+    id: "9ece784b04a34d0168771132a396ea1a2ab5d4f7",
+    name: "vds-dark-gray5"
+  },
+  { id: "ed4d2d264a1de6ca720181c8624d51e7e0da2759", name: "vds-mid-gray1" },
+  { id: "f094d14bb92b32b8d8a73556cd4050d25f67e900", name: "vds-mid-gray2" },
+  { id: "71223d93c7b1135adadbfb2b60facd187661fba0", name: "vds-mid-gray3" },
+  { id: "2027b113a62fe075533161a50536c3da5249125e", name: "vds-mid-gray4" },
+  { id: "5189537757544d9850dcc7e0875ad80d51c6f5f7", name: "vds-mid-gray5" },
+  {
+    id: "3ce5318878800304a3bfc333b9601702fe3b4e2a",
+    name: "vds-light-gray1"
+  },
+  {
+    id: "fe34c28c54a09a2ede275aa183d2ac5470c388b8",
+    name: "vds-light-gray2"
+  },
+  {
+    id: "20934441ec97cb9226e79872a632afa2cab05b96",
+    name: "vds-light-gray3"
+  },
+  {
+    id: "f45c4c54ca16099cbe15e929c62536eefe367e7d",
+    name: "vds-light-gray4"
+  },
+  {
+    id: "f8383687062b62d4907f695959024fafac80a5f6",
+    name: "vds-light-gray5"
+  },
+  {
+    id: "8c4b0e6985c609d6bebda8f7e5d1ec991d57d9d4",
+    name: "vds-turquoise-dark"
+  },
+  {
+    id: "334db1b82ef3d19028eb2edf214ae9285ac1aabf",
+    name: "vds-turquoise-light"
+  },
+  { id: "1f663c54dc8c2599c99d03ff344a2db59773e124", name: "vds-lily-dark" },
+  {
+    id: "c20c7b2631bc13a59f903c355b9cc4acd5172de3",
+    name: "vds-lily-light"
+  },
+  {
+    id: "88586021026c1fcb39a97e48cf3d8b6872c8183d",
+    name: "vds-leather-dark"
+  },
+  {
+    id: "5932f62ad183bf85c276ed0f866acbc82dd6c42d",
+    name: "vds-leather-light"
+  },
+  {
+    id: "29d580e7c8087f022181a15a5203aa892085f62d",
+    name: "vds-periwinkle-dark"
+  },
+  {
+    id: "7a4fb90fe0edd0888f4a68feb72608acbaa1efbb",
+    name: "vds-periwinkle-light"
+  },
+  {
+    id: "a6bbff05cf310f4034de9050c300f16e0d9f50cb",
+    name: "vds-carrot-dark"
+  },
+  {
+    id: "c85948baf1017cfa690dc0119f7bc9695d58078f",
+    name: "vds-carrot-light"
+  },
+  {
+    id: "ecd70e51717f9cf391113ffa24b2577360f93992",
+    name: "vds-lavender-dark"
+  },
+  {
+    id: "a6120fe46cb4e2454e206ff11073bfdd8727ced2",
+    name: "vds-lavender-light"
+  },
+  { id: "c5e79158fd9899de4e5a57563457b9a0e34d36ea", name: "vds-pink-dark" },
+  {
+    id: "9e1aa93a86d3abe514da26ac5217334bbd979ccb",
+    name: "vds-pink-light"
+  },
+  {
+    id: "94d4b777263dedc488d634ae2d4c2d0da07ccd0d",
+    name: "vds-amber-dark"
+  },
+  {
+    id: "347f5117eb488397ac291a305013843d9d307ebe",
+    name: "vds-amber-light"
+  },
+  { id: "b9b2f2b2b7bc1e025436d5127fe2e49d54112925", name: "vds-aqua-dark" },
+  {
+    id: "2a968601b68e337a035480e24a5a1ed91d35d0da",
+    name: "vds-aqua-light"
+  },
+  {
+    id: "27d1166a51c95223abf7beca0caa2de02a48ff83",
+    name: "vds-olive-dark"
+  },
+  {
+    id: "4c19b2c92222a02791e5cf07e27f6c6b438d14c7",
+    name: "vds-olive-light"
+  },
+  {
+    id: "662683120c2ed90c4e9461f0fc434362b0fd8cad",
+    name: "vds-test-color-style"
+  }
+];
