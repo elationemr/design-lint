@@ -3,7 +3,7 @@ import { createErrorObject } from "../../lintingFunctions";
 export default function checkDeprecatedComponents(node, errors) {
   // Only review if component is from an outside library. We
   // ignore local components when checking.
-  if (node.mainComponent.remote) {
+  if (typeof node.mainComponent !== "undefined" && node.mainComponent.remote) {
     const name: string = node.name;
     const mainComponentName = node.mainComponent.name;
     const mainComponentDescription = node.mainComponent.description;
