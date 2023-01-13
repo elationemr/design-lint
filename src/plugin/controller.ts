@@ -393,6 +393,7 @@ figma.ui.onmessage = msg => {
     checkFills(node, errors);
 
     checkMultipleFills(node, errors);
+    vitalChecks(node, errors);
 
     checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
