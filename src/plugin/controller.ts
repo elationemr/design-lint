@@ -7,7 +7,9 @@ import {
   // customCheckTextFills,
   // uncomment this as an example of a custom lint function ^
 } from "./lintingFunctions";
+import checkMultipleFills from "./elation-functions/generic/checkMultipleFills";
 import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
+import checkDeprecatedColors from "./elation-functions/generic/checkDeprecatedColors";
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
@@ -409,7 +411,13 @@ figma.ui.onmessage = msg => {
     // We could also comment out checkFills and use a custom function instead
     // Take a look at line 122 in lintingFunction.ts for an example.
     // customCheckTextFills(node, errors);
-    invalidTextFills(node, errors);
+    checkMultipleFills(node, errors);
+
+    if (node.fillStyleId !== "") {
+      invalidTextFills(node, errors);
+      checkDeprecatedColors(node, errors);
+    }
+
     checkEffects(node, errors);
     checkStrokes(node, errors);
 
