@@ -616,6 +616,862 @@ export const allColorTokens: TokenGroup = {
       name: "vds-action-link-color-active"
     }
   ],
+  _button: [
+    {
+      id: "44604ada11a3346fbba7c48fa23b10d14a2b4661",
+      name: "vds-button-accent-color"
+    },
+    {
+      id: "0bef15db16a3227f286b814ec91b0f30a7335dca",
+      name: "vds-button-accent-surface"
+    },
+    {
+      id: "7901f0bde724a1cf68c2182332d57643a9929dab",
+      name: "vds-button-accent-hover"
+    },
+    {
+      id: "6f0e8d90039f7b868edce140860e4fb317283aef",
+      name: "vds-button-accent-active"
+    },
+    {
+      id: "f10372d6863fe34f8710a92b80db775086466a2e",
+      name: "vds-button-primary-color"
+    },
+    {
+      id: "a42deb2cd72e2b3c58396da6f3fd6d0b366fc712",
+      name: "vds-button-primary-surface"
+    },
+    {
+      id: "12a5792f3212d40f1160c1c540f769adf8059a4e",
+      name: "vds-button-primary-hover"
+    },
+    {
+      id: "7b991f574f8712f819173b0650c08fa2d8e62c55",
+      name: "vds-button-primary-active"
+    },
+    {
+      id: "da8f46674c6a3b88451ce5107af3c84c8b82a718",
+      name: "vds-button-default-color"
+    },
+    {
+      id: "fe618f1a74fe674a7547bcc352bd51e319f0df9d",
+      name: "vds-button-default-surface"
+    },
+    {
+      id: "3bf3e78f0245fb6d207c97b0a214e619b621ab17",
+      name: "vds-button-default-hover"
+    },
+    {
+      id: "23b0e7f2178cc461c39809b516e97c2254b1ba28",
+      name: "vds-button-default-active"
+    },
+    {
+      id: "8635c72f526585bc159d4230043bbf557df5e4f3",
+      name: "vds-button-link-color"
+    },
+    {
+      id: "fef072e9e0ffd185d101994c32a44e732787ea1a",
+      name: "vds-button-link-hover-color"
+    },
+    {
+      id: "b1550ca598ec46c6f4b04edaa5c1c00967c718fb",
+      name: "vds-button-link-active-color"
+    },
+    {
+      id: "79f3d9f85dd079ba3a6d8aaf64465c7a4c705ba1",
+      name: "vds-button-link-surface"
+    },
+    {
+      id: "f5a87e19e071f5600e5a590d4141a71dd074f7a2",
+      name: "vds-button-link-surface-hover"
+    },
+    {
+      id: "ae7ae00e928911784263c9fd044186deefc17fea",
+      name: "vds-button-link-surface-active"
+    },
+    {
+      id: "f046e7d726ae52ad0238acd53603a3324e6bbb2f",
+      name: "vds-button-ghost-color"
+    },
+    {
+      id: "e43ffb04543b2beab87526f8c29e241d27662abe",
+      name: "vds-button-ghost-color-hover"
+    },
+    {
+      id: "dd7a56a17da18dc748f2eefcfee46bba9942ed57",
+      name: "vds-button-ghost-color-active"
+    },
+    {
+      id: "0e46e5a7dce9e6600ddde63fd8695ac950884521",
+      name: "vds-button-ghost-surface"
+    },
+    {
+      id: "54228d3fea518a3cfbc02c78dddb9530d47746e8",
+      name: "vds-button-ghost-surface-hover"
+    },
+    {
+      id: "bdf59a7f9adaaefca96e2067bcde0b4b14dbce88",
+      name: "vds-button-ghost-surface-active"
+    },
+    {
+      id: "5dc9daa9ab32fbef5239216ca8c549b91fa860b9",
+      name: "vds-button-danger-color"
+    },
+    {
+      id: "2bc4f9d00f8cb3581710216aa6848811bf9eef58",
+      name: "vds-button-danger-surface"
+    },
+    {
+      id: "e43f23f07a8907505a866e89f7042675ecea0e07",
+      name: "vds-button-danger-hover"
+    },
+    {
+      id: "1b812a0db9f89e3ded02608268722759e109d53d",
+      name: "vds-button-danger-active"
+    },
+    {
+      id: "a04b4a71628397f0a2d668b26fa7a3096af36637",
+      name: "vds-button-danger-color-soft"
+    },
+    {
+      id: "f2cb2e4f91d1458eed575247a72aa4987c7c50ab",
+      name: "vds-button-danger-surface-soft"
+    },
+    {
+      id: "57af84ad7ae38c9ddd05b7749fab710ad3a57fc8",
+      name: "vds-button-danger-hover-soft"
+    },
+    {
+      id: "6df39eb6de3f06116d65c7b57497cbad88e5b479",
+      name: "vds-button-danger-active-soft"
+    },
+    {
+      id: "e2cbdddabfd70090a299dc2bd180af75c27f91d6",
+      name: "vds-button-danger-surface-ghost"
+    },
+    {
+      id: "b528e62cd97a5be56f44210cd19ddb49e925f61b",
+      name: "vds-button-danger-hover-ghost"
+    },
+    {
+      id: "80b0a09a5053f1e3782e65217bdbc8659d8938c0",
+      name: "vds-button-danger-color-ghost"
+    },
+    {
+      id: "494cf9f78c4024700abd714b9c1c01520e6d8ab5",
+      name: "vds-button-danger-active-ghost"
+    },
+    {
+      id: "167e3805d980a3980e9788b5f3cdd292644e2f30",
+      name: "vds-button-disabled-color"
+    },
+    {
+      id: "f3a98f35ac8413a3d9bfe5a71a0f8cc6c7d81b27",
+      name: "vds-button-disabled-surface"
+    },
+    {
+      id: "20f9426692b39ad1648974ff646a6193b8d5d0ce",
+      name: "vds-button-disabled-border-color"
+    },
+    {
+      id: "7a707ad847849c8361270ecb4ffdf2607cd993f2",
+      name: "vds-button-accent-color-reverse"
+    },
+    {
+      id: "92db700b9d44fa014565f91ef54197280f3053f9",
+      name: "vds-button-accent-hover-color-reverse"
+    },
+    {
+      id: "ed52419fb4ad66220ffe7c0feb7a29dbb5ef990e",
+      name: "vds-button-accent-active-color-reverse"
+    },
+    {
+      id: "0e6f54eef0576a526a76507de09b52dbce5ae543",
+      name: "vds-button-accent-surface-reverse"
+    },
+    {
+      id: "746f51dd7e64b1ceda11a8cb7f35e2110035204b",
+      name: "vds-button-accent-hover-reverse"
+    },
+    {
+      id: "d61bb934b99b0e41b514c106095a11f028d8dba4",
+      name: "vds-button-accent-active-reverse"
+    },
+    {
+      id: "317b3ebf447d491c37963dc23916d61624cad51c",
+      name: "vds-button-primary-color-reverse"
+    },
+    {
+      id: "1615e22c2e6dd4c2e46eaac494871ecba74d894a",
+      name: "vds-button-primary-hover-color-reverse"
+    },
+    {
+      id: "61dab99a620b71e75d35cc2c16e25ac4d4ba7baa",
+      name: "vds-button-primary-active-color-reverse"
+    },
+    {
+      id: "57f8ce396f251e40e83235e5b490a2db8a445baa",
+      name: "vds-button-primary-surface-reverse"
+    },
+    {
+      id: "61299206d56c023d03d472a43c9904a32647a5c8",
+      name: "vds-button-primary-hover-reverse"
+    },
+    {
+      id: "0c10417dded775879c42d5c5b7b387edddcb4716",
+      name: "vds-button-primary-active-reverse"
+    },
+    {
+      id: "b4dea8ce4a2617de5456d52ede839a706ec4e521",
+      name: "vds-button-default-color-reverse"
+    },
+    {
+      id: "9deb93ae4e5125e127474260285dea81ea148f27",
+      name: "vds-button-default-hover-color-reverse"
+    },
+    {
+      id: "9a29f2b72ac040cb5cff2a92c2a459e5d751683d",
+      name: "vds-button-default-active-color-reverse"
+    },
+    {
+      id: "56e17493f3fed03f940f70991ae08d3f68173716",
+      name: "vds-button-default-surface-reverse"
+    },
+    {
+      id: "d533d97b9e0b90911a4d57395ec6d7e3ff38a4a8",
+      name: "vds-button-default-hover-reverse"
+    },
+    {
+      id: "aee728c01e24d1e56a63b8c8ebd189d252164ee8",
+      name: "vds-button-default-active-reverse"
+    },
+    {
+      id: "b75249ad4cd276c8b3ff70ee461ea4e4c9ad7775",
+      name: "vds-button-link-color-reverse"
+    },
+    {
+      id: "19ef40888ab5c0e805b1a9363f4ebc634f306980",
+      name: "vds-button-link-hover-color-reverse"
+    },
+    {
+      id: "d2f9c3675a0018c23b4b938ef138e9090ad3586f",
+      name: "vds-button-link-active-color-reverse"
+    },
+    {
+      id: "879387b947b6372dfe2974a2da439994670652a8",
+      name: "vds-button-link-surface-reverse"
+    },
+    {
+      id: "a0565562201590b2bb0c292254b222f4b7045784",
+      name: "vds-button-link-surface-hover-reverse"
+    },
+    {
+      id: "a874b72b60cdf357e848aa6d3b5fcd977a757658",
+      name: "vds-button-link-surface-active-reverse"
+    },
+    {
+      id: "724e9e80d32cdeb97a29a916b0495a5e5bb22c16",
+      name: "vds-button-ghost-color-reverse"
+    },
+    {
+      id: "0509faf2f7c89137d926ee09d252ddc4ab289113",
+      name: "vds-button-ghost-color-hover-reverse"
+    },
+    {
+      id: "0918db1816646c6ab6065077d447e427f807809c",
+      name: "vds-button-ghost-color-active-reverse"
+    },
+    {
+      id: "24d87b6f8321371aa0dc53ff9b044e7445419e33",
+      name: "vds-button-ghost-surface-reverse"
+    },
+    {
+      id: "2f484c4f67ec0f1d9ab653125dd4a24f178cfaf7",
+      name: "vds-button-ghost-surface-hover-reverse"
+    },
+    {
+      id: "0731c01fc592ad973bff0592f09e28c2e8441eef",
+      name: "vds-button-ghost-surface-active-reverse"
+    },
+    {
+      id: "127cc028d98a375b8524b35c9bdac7542a7d580c",
+      name: "vds-button-disabled-surface-reverse"
+    },
+    {
+      id: "37069b3c5d56172195f4945cfb698549382ca8eb",
+      name: "vds-button-disabled-color-reverse"
+    },
+    {
+      id: "4045936a02a22160da12e1c3ca14a310c84800d5",
+      name: "vds-button-danger-surface-reverse"
+    },
+    {
+      id: "b40c01ecda768a4b2a5a51035f08f60af536e39a",
+      name: "vds-button-danger-active-reverse"
+    },
+    {
+      id: "dc64eaffc9c245e21e23f99a101fe82302e009e0",
+      name: "vds-button-danger-hover-reverse"
+    },
+    {
+      id: "417e9edc35f4083a6964a67ad5206173443c059c",
+      name: "vds-button-danger-color-reverse"
+    },
+    {
+      id: "798c3aa2b38aa13ec379ec6a97e02bbeca1122a7",
+      name: "vds-button-danger-hover-color-reverse"
+    },
+    {
+      id: "c9b80c827d6cb49cc0a6acaa88895ffc6bbbe18b",
+      name: "vds-button-danger-active-color-reverse"
+    },
+    {
+      id: "9678978e2c32f141dce6775bd585b793d313f8f6",
+      name: "vds-button-danger-color-soft-reverse"
+    },
+    {
+      id: "5686da3d83e81c8357f229ce1611ef90d4da3785",
+      name: "vds-button-danger-active-soft-reverse"
+    },
+    {
+      id: "e09d82a44b2e9ff7a9efb798a685fa2f1b566ea9",
+      name: "vds-button-danger-surface-soft-reverse"
+    },
+    {
+      id: "a6b19971c20fe931423b49b8ae27b240144b4d21",
+      name: "vds-button-danger-hover-soft-reverse"
+    },
+    {
+      id: "e423944990bd19ed8544e789db62a120c0aa6edc",
+      name: "vds-button-danger-color-ghost-reverse"
+    },
+    {
+      id: "d62af452b02045a48073c5a2972ba456411b9d3b",
+      name: "vds-button-danger-surface-ghost-reverse"
+    },
+    {
+      id: "8ed09e3642dd3f346b0742bd3bc37aa1561ba5e3",
+      name: "vds-button-danger-hover-ghost-reverse"
+    },
+    {
+      id: "394bff69a40db93a9b43aa3c20a41cd56197a881",
+      name: "vds-button-danger-active-ghost-reverse"
+    },
+    {
+      id: "2d88f7f1cfbe68b6509728abd7ac28940ee06fb9",
+      name: "vds-button-danger-hover-color-ghost-reverse"
+    },
+    {
+      id: "1472b0f8c8d6068944820fab2c36292ace5bde91",
+      name: "vds-button-danger-active-color-ghost-reverse"
+    }
+  ],
+  "_button group": [
+    {
+      id: "f8ae3ff438c3054cbeeeab13f1a60a6be4211d98",
+      name: "vds-button-group-surface-selected"
+    },
+    {
+      id: "1c898c306d52413bb65574ac0a67749d4b24bb35",
+      name: "vds-button-group-color"
+    },
+    {
+      id: "9a721d961371b536a2750b743b17f668a6089586",
+      name: "vds-button-group-color-selected"
+    },
+    {
+      id: "33f1b3c77f0d0bd780af88236402bfa015091d19",
+      name: "vds-button-group-border-color"
+    }
+  ],
+  _badge: [
+    {
+      id: "ac3e3bc2c086bce279494afa6d1fd472a9f20f90",
+      name: "vds-badge-success-surface"
+    },
+    {
+      id: "a96797e5e98e4ce9d7b91daac70690910207a5ea",
+      name: "vds-badge-success-surface-reverse"
+    },
+    {
+      id: "456c60c602e678b4fd0a4f273b65ff4abe9ea044",
+      name: "vds-badge-success-color"
+    },
+    {
+      id: "98bca41544a5082705fd3a97e88644b6c8c13997",
+      name: "vds-badge-success-color-reverse"
+    },
+    {
+      id: "54c20123db9b2211ecfa5e33814a572b10c023f8",
+      name: "vds-badge-warning-surface"
+    },
+    {
+      id: "b2263c6275487d4f808c121378e41742279133aa",
+      name: "vds-badge-warning-surface-reverse"
+    },
+    {
+      id: "f89b64f45b050b47a6be8676eb6f307105b8603e",
+      name: "vds-badge-warning-color"
+    },
+    {
+      id: "4ee08b2cb91f09c633378eaedd1c4b9918325e51",
+      name: "vds-badge-warning-color-reverse"
+    },
+    {
+      id: "2a6296fc1cd9378d52f3fc161af86175637e7ef0",
+      name: "vds-badge-critical-surface"
+    },
+    {
+      id: "ca95d413d540fae5dc77c352d76c21862921f6c6",
+      name: "vds-badge-critical-surface-reverse"
+    },
+    {
+      id: "cd2f47daa8c3243a3f4a4658f42b064b47b807a0",
+      name: "vds-badge-critical-color"
+    },
+    {
+      id: "af2313ea58d525b04929cdee1ccb3684fa350d30",
+      name: "vds-badge-critical-color-reverse"
+    },
+    {
+      id: "473eb13af59caefca3cabda66d0520f08e7f00ba",
+      name: "vds-badge-info-surface"
+    },
+    {
+      id: "02c0b4f047add4469e098502329c18ba0f7e8fb8",
+      name: "vds-badge-info-surface-reverse"
+    },
+    {
+      id: "f8f7706df4320ab43e5096132555e88362cb8c42",
+      name: "vds-badge-info-color"
+    },
+    {
+      id: "9df26cd374d78d206110b3490f829289ecd7cb09",
+      name: "vds-badge-info-color-reverse"
+    },
+    {
+      id: "200fe2592aa100084e17b5c1d3e5b1ad6c09fbb9",
+      name: "vds-badge-neutral-surface"
+    },
+    {
+      id: "08f004c82f4ea859979a5abac236e6ff066efaae",
+      name: "vds-badge-neutral-surface-reverse"
+    },
+    {
+      id: "5ce78354ff281fee8b3d6b74f26fe5bb9461f369",
+      name: "vds-badge-neutral-color"
+    },
+    {
+      id: "89c2983e87b00e14b5005437bf173ea3d07fa128",
+      name: "vds-badge-neutral-color-reverse"
+    }
+  ],
+  _chip: [
+    {
+      id: "03fba3a4a790f198aaf77dbd9b7cb4c41b26c015",
+      name: "vds-chip-color"
+    },
+    {
+      id: "41a124fbb6019c7b3aa5c5668ddc87450471f4b7",
+      name: "vds-chip-color-focus"
+    },
+    {
+      id: "55c6cc066f09c1b979c427053267aed019d9457c",
+      name: "vds-chip-surface"
+    },
+    {
+      id: "89dcef06bf137fb01cdc61405fb55fa48bd6ca52",
+      name: "vds-chip-surface-hover"
+    },
+    {
+      id: "c5292bb519d04580ef7f42605a54c75bdee4b05b",
+      name: "vds-chip-surface-active"
+    },
+    {
+      id: "5843a37d50b520cf0bfb035775a9f91bd7b5535b",
+      name: "vds-chip-color-hover"
+    }
+  ],
+  "_form-control": [
+    {
+      id: "764421e1e7f90f243413e4c9f9fe990780058d60",
+      name: "vds-form-control-surface-unselected"
+    },
+    {
+      id: "507d3aeb271afff1a32e190ea5072a186cbed9a8",
+      name: "vds-form-control-surface-disabled"
+    },
+    {
+      id: "2a7aee0bc7108e1b389d3bb4e3bc2475fb02aed8",
+      name: "vds-form-control-surface-selected"
+    },
+    {
+      id: "7bf56b99cef08659a5feb28302207e42751aec05",
+      name: "vds-form-control-border-color-unselected"
+    },
+    {
+      id: "e1bfedb57b15fe9547eb1e40480316c532423772",
+      name: "vds-form-control-border-color-unselected-hover"
+    },
+    {
+      id: "b56133517389d0515299efda9e2ec7563d6567d6",
+      name: "vds-form-control-border-color-unselected-active"
+    },
+    {
+      id: "6a9ca6319ab19a61a63fa182e2bc05284cfb3533",
+      name: "vds-form-control-indicator"
+    },
+    {
+      id: "521f80464d5dec4c1debde569c998072d48048af",
+      name: "vds-form-control-indicator-disabled"
+    }
+  ],
+  _input: [
+    {
+      id: "9dff576740ed170f66f3a1b0e77aba92d0ff26bd",
+      name: "vds-input-border-color"
+    },
+    {
+      id: "aecd78f2e64d587634205c17ac19b52494f36939",
+      name: "vds-input-border-color-hover"
+    },
+    {
+      id: "536607b04632371b283b6e3c4c343d1ea6092ae6",
+      name: "vds-input-border-color-disabled"
+    },
+    {
+      id: "1ca1681bbd407f5e27742610a6337783bee5fe30",
+      name: "vds-input-surface"
+    },
+    {
+      id: "bccc128c8fce042f942dcf6191f6cc87b608a216",
+      name: "vds-input-surface-activated"
+    },
+    {
+      id: "5b66c647b1edcbfde54c84d7af6b5299c10c5c66",
+      name: "vds-input-surface-disabled"
+    },
+    {
+      id: "109b2d4b6b23a9a5e17e978a172fe9c13c454988",
+      name: "vds-input-contained-label-color"
+    },
+    {
+      id: "ea035743b96fda7fcf47a2b77cb65de82bee6b92",
+      name: "vds-input-contained-label-disabled"
+    },
+    {
+      id: "c3a32539c9fa1083f8d2ed2f9e9837ce1c5e0433",
+      name: "vds-input-user-text-color"
+    },
+    {
+      id: "89b57aea6fcbabc458a9b37f7ebcb52fb9eee599",
+      name: "vds-input-user-text-disabled"
+    },
+    {
+      id: "b411ad7bf672642df26a5433b5de3fb1696066cc",
+      name: "vds-input-placeholder-color"
+    },
+    {
+      id: "670887b446638fe66209aebc3be960d240bd7598",
+      name: "vds-input-placeholder-color-disabled"
+    },
+    {
+      id: "878576bb8611a762799b1274b86a115173b61465",
+      name: "vds-input-helper-color"
+    },
+    {
+      id: "6860abd24d4590110bf8237acf0af3646b9f007b",
+      name: "vds-input-helper-color-disabled"
+    },
+    {
+      id: "ea00d5b4a9b70583497aa76d31993a83ba847c53",
+      name: "vds-input-counter-color"
+    },
+    {
+      id: "aa9e450887e5fb79c44f894c65df1cae8e073425",
+      name: "vds-input-icon-fill"
+    },
+    {
+      id: "0d715177e5dd2d35b2b6b73511c7312d7e755caf",
+      name: "vds-input-icon-fill-disabled"
+    },
+    {
+      id: "a37a36c2486dd3c9d6cc54f7e7e0f9fbb419f09d",
+      name: "vds-input-icon-meta-fill"
+    },
+    {
+      id: "1557f7cfc6ecac71f9d5e4adf7c1199db365f1d2",
+      name: "vds-input-button-fill"
+    },
+    {
+      id: "267e8ac3098ecfd422e8ccc0b66037d3a311d2f3",
+      name: "vds-input-button-fill-disabled"
+    },
+    {
+      id: "88544007f017f27bcdf305b460001dd15d28c521",
+      name: "vds-input-label-color"
+    },
+    {
+      id: "fdbb1aa94062b9c56076c0de49df6e8617185814",
+      name: "vds-input-label-color-disabled"
+    },
+    {
+      id: "c1c5e2b795f1c02f10ca1c272faadd2518603214",
+      name: "vds-input-readonly-border-color"
+    },
+    {
+      id: "a5239e866b40bb1bdd4d4750b27e9c8caf4c6c26",
+      name: "vds-input-readonly-surface"
+    },
+    {
+      id: "52f61e08b70ff6e5ad1ffe64c95e4bc6b7101117",
+      name: "vds-input-ghost-border-color"
+    },
+    {
+      id: "5ca98022631af239fb9c6b0ecac886bea363217b",
+      name: "vds-input-ghost-surface"
+    },
+    {
+      id: "7a55bb949304db0818a342594a2842e268e4b1fb",
+      name: "vds-input-error-border-color"
+    },
+    {
+      id: "8f5825a3c00b97fb88aa8a29bcddfccfe1de4f56",
+      name: "vds-input-error-surface"
+    },
+    {
+      id: "40175bd55dda9521ff31b42092737a53295b626b",
+      name: "vds-input-ghost-surface-hover"
+    },
+    {
+      id: "61786691fbf8e23bf4e2ee026683c516250bf8df",
+      name: "vds-input-ghost-label-color-in-use"
+    },
+    {
+      id: "bfe9f571d257e6ae66160ac69f1bdaf7de28417a",
+      name: "vds-input-ghost-surface-disabled"
+    }
+  ],
+  _popover: [
+    {
+      id: "b095c4182058041debab7eec9595721d75af1e48",
+      name: "vds-popover-surface"
+    },
+    {
+      id: "178983b377bf61850dad99eb775007e8b114fd9a",
+      name: "vds-popover-item-surface-hover"
+    },
+    {
+      id: "2e92f18ad464efd7f29b6b868ba549791f6990a9",
+      name: "vds-popover-item-surface-active"
+    },
+    {
+      id: "92ebf2d0cdd86435f276ab8194a7029c50f5ddd8",
+      name: "vds-popover-item-surface-selected"
+    },
+    {
+      id: "f94014e57317c6392b9691c232621822e2222319",
+      name: "vds-popover-item-surface-selected-hover"
+    },
+    {
+      id: "676fd49590f321e50495789aabff4eb516353393",
+      name: "vds-popover-item-color"
+    },
+    {
+      id: "70a5459a68de1d40a4a804f6047f18ac6083b0d4",
+      name: "vds-popover-item-helper-color"
+    },
+    {
+      id: "ecb5c74958f392a2c3f59a153f67057957fc3031",
+      name: "vds-popover-item-color-hover"
+    },
+    {
+      id: "9ddff3ba71c5485a7df3b362ce7b6a1f0d3a420f",
+      name: "vds-popover-item-helper-color-hover"
+    },
+    {
+      id: "4d12db0322ea793cb3fd53c7fd8dbdce00a61338",
+      name: "vds-popover-item-color-selected"
+    },
+    {
+      id: "b194c58dd3e7a606db7212fb268f39b3b389ebcb",
+      name: "vds-popover-item-helper-color-selected"
+    },
+    {
+      id: "78d17b46fc76c5f24da9bb0b382808bddd0a4ff2",
+      name: "vds-popover-footer-surface"
+    },
+    {
+      id: "3a22d7a9de9a4826b310bbad004ad2254cc1a8ac",
+      name: "vds-popover-footer-color"
+    },
+    {
+      id: "abc273b9c1cdb17644fac427e613444005f0c2aa",
+      name: "vds-popover-footer-border-color"
+    },
+    {
+      id: "f7122342c02a5bb5b8fd7561e937b6ff866b439b",
+      name: "vds-popover-footer-icon-color"
+    }
+  ],
+  _table: [
+    {
+      id: "843c8fd7113324d709956c660de9ffff208bb768",
+      name: "vds-table-color"
+    },
+    {
+      id: "8c16dc14c0a6aec2d883604a66259a22aa811e6b",
+      name: "vds-table-border-color"
+    },
+    {
+      id: "6ddf4b0acc38123662b646b21abda16770267e7a",
+      name: "vds-table-border-color-hover"
+    },
+    {
+      id: "21c295f18a0f1c9f9a4560d91c22a8d68048517c",
+      name: "vds-table-surface"
+    },
+    {
+      id: "8f4ef1cfedcc43fbbb297527744fa17b1f1249b0",
+      name: "vds-table-surface-hover"
+    },
+    {
+      id: "a295e58a1e1715f0993cab62a7f37b11b515f899",
+      name: "vds-table-surface-zebra"
+    },
+    {
+      id: "010d9e60375003e89369b57d1549abb49b58d9c5",
+      name: "vds-table-footer-border-color"
+    },
+    {
+      id: "6f36377e564ccfed8e3167720e6e80ed24b0551c",
+      name: "vds-table-footer-color"
+    },
+    {
+      id: "cbb2e7c20b53c6a2a7576bbef9a50953fcf1330e",
+      name: "vds-table-footer-divider-border-color"
+    },
+    {
+      id: "a048a365ca7c90c4ab59b42122331b951a50497a",
+      name: "vds-table-footer-surface"
+    },
+    {
+      id: "1ef29ed8360bdb04bb6cef7133672dc0b4dc65c6",
+      name: "vds-table-header-border-color"
+    },
+    {
+      id: "a04d37010093b1d81d954c231e5142991f0c6e21",
+      name: "vds-table-header-border-color-active"
+    },
+    {
+      id: "534e57c85f0ccabb81e162b36733f4ab2046f6d5",
+      name: "vds-table-header-color"
+    },
+    {
+      id: "e433f5c67917c770f3d17401899f85e73f007a82",
+      name: "vds-table-header-color-active"
+    },
+    {
+      id: "5414bc50c5b53773b1674d8379e6b193a26b203f",
+      name: "vds-table-header-surface"
+    },
+    {
+      id: "8c97ff32d9b4278c72c369038e77132969b4ac47",
+      name: "vds-table-header-surface-hover"
+    },
+    {
+      id: "2344f229a1fbb307309e87ad871fcdd2685d81bc",
+      name: "vds-table-border-color-selected"
+    },
+    {
+      id: "e7feee23824a31c23eea50846252c4893ade038c",
+      name: "vds-table-color-selected"
+    },
+    {
+      id: "833adc74d31e35e58356de63067751b66406ad41",
+      name: "vds-table-selection-area-border-color"
+    },
+    {
+      id: "3e6e268160734ae373a6ff1fc1134996572d5209",
+      name: "vds-table-surface-selected"
+    },
+    {
+      id: "7abde947754934ce07436637591e015d3f030425",
+      name: "vds-table-surface-selected-hover"
+    },
+    {
+      id: "a94e670c40e5fa93bd8eaef38d0d3d1d038bf23c",
+      name: "vds-table-action-color-selected"
+    },
+    {
+      id: "d1542562bed7042f0f34397bc14fa5cb9c5205fc",
+      name: "vds-table-expanded-row-border-color"
+    }
+  ],
+  _tag: [
+    {
+      id: "313c73d6853369c97ce014e421fe4ac818125107",
+      name: "vds-tag-surface"
+    },
+    {
+      id: "be17b4a342f078f20b159dbcc7379392eaf38732",
+      name: "vds-tag-color"
+    },
+    {
+      id: "2ed057c971ae25a38f26f34ef509536b817f57ac",
+      name: "vds-tag-surface-el8"
+    },
+    {
+      id: "ebf664ca7e1a5bef57e785796ca083fd0563f49a",
+      name: "vds-tag-color-el8"
+    }
+  ],
+  _toggle: [
+    {
+      id: "b4b5d3a66db4790d003ad44344bf5f9f07839b11",
+      name: "vds-toggle-knob-off"
+    },
+    {
+      id: "5b72a20acf9dd896f4d5f03f70bd2f50ee73e0ed",
+      name: "vds-toggle-knob-on"
+    },
+    {
+      id: "ef7b9429fc77c1c9136cf1cd3449ab5fc43a59e7",
+      name: "vds-toggle-knob-disabled"
+    },
+    {
+      id: "a14c2305859414e4a11042fc4ad7607fdd3d57e7",
+      name: "vds-toggle-surface-off"
+    },
+    {
+      id: "e4e242b51115235a3e8724a2fa8048ac5df38300",
+      name: "vds-toggle-surface-on"
+    },
+    {
+      id: "b438576d3c06f230658c0c5bc5e6f2411a8b82b4",
+      name: "vds-toggle-surface-disabled"
+    },
+    {
+      id: "c97634464bc12d47a0f20f7263f4b63b71dfeb5e",
+      name: "vds-toggle-border-color-disabled"
+    }
+  ],
+  _tooltip: [
+    {
+      id: "03af98883443c46aa9c477290d63eb1290a3d73f",
+      name: "vds-tooltip-color"
+    },
+    {
+      id: "6316d0fbc812f7f1b3a5310b73304e14b1daec02",
+      name: "vds-tooltip-surface"
+    }
+  ],
+  _unavailable: [
+    {
+      id: "560c1016dc4778665912363555236c2d8b458264",
+      name: "vds-unavailable-surface"
+    }
+  ],
   "floating-toolbar": [
     {
       id: "61da5db3b56ee77f880916443649c676b9d62354",
@@ -629,6 +1485,48 @@ export const allColorTokens: TokenGroup = {
 };
 
 export const categorizedTokens: TokenGroup = {
+  text: [
+    {
+      id: "46780bcc12cd1cfa3bd8f3b8a3c1b101802f6081",
+      name: "vds-text-primary-color"
+    },
+    {
+      id: "36204753c92dc47ce437d3bb0126db09cf132819",
+      name: "vds-text-secondary-color"
+    },
+    {
+      id: "84b3b97e74456f7382df7d008f67340f798d1beb",
+      name: "vds-text-muted-color"
+    },
+    {
+      id: "1b68001cb5e33eb4a2f53227ab3d17adb738a946",
+      name: "vds-text-disabled-color"
+    },
+    {
+      id: "18ed0c0f50d2535da8fd0e067d65ac108574e3a1",
+      name: "vds-text-title-color"
+    },
+    {
+      id: "cb0bd89e5dd3a820a333864eb022083a9ad81d2a",
+      name: "vds-text-icon-muted-color"
+    },
+    {
+      id: "ec29711f54a0f4b160e8af760717eeae935abaad",
+      name: "vds-text-primary-light-color"
+    },
+    {
+      id: "bf4894bf9b7c404aec3610207643f9e5d948f7ce",
+      name: "vds-text-secondary-light-color"
+    },
+    {
+      id: "c3a32539c9fa1083f8d2ed2f9e9837ce1c5e0433",
+      name: "vds-input-user-text-color"
+    },
+    {
+      id: "89b57aea6fcbabc458a9b37f7ebcb52fb9eee599",
+      name: "vds-input-user-text-disabled"
+    }
+  ],
   surface: [
     {
       id: "b5a6e3b2530c616d8285b1028eeefc27c7355aaa",
@@ -767,6 +1665,294 @@ export const categorizedTokens: TokenGroup = {
       name: "vds-intent-deceased-surface-hover"
     },
     {
+      id: "0bef15db16a3227f286b814ec91b0f30a7335dca",
+      name: "vds-button-accent-surface"
+    },
+    {
+      id: "a42deb2cd72e2b3c58396da6f3fd6d0b366fc712",
+      name: "vds-button-primary-surface"
+    },
+    {
+      id: "fe618f1a74fe674a7547bcc352bd51e319f0df9d",
+      name: "vds-button-default-surface"
+    },
+    {
+      id: "79f3d9f85dd079ba3a6d8aaf64465c7a4c705ba1",
+      name: "vds-button-link-surface"
+    },
+    {
+      id: "f5a87e19e071f5600e5a590d4141a71dd074f7a2",
+      name: "vds-button-link-surface-hover"
+    },
+    {
+      id: "ae7ae00e928911784263c9fd044186deefc17fea",
+      name: "vds-button-link-surface-active"
+    },
+    {
+      id: "0e46e5a7dce9e6600ddde63fd8695ac950884521",
+      name: "vds-button-ghost-surface"
+    },
+    {
+      id: "54228d3fea518a3cfbc02c78dddb9530d47746e8",
+      name: "vds-button-ghost-surface-hover"
+    },
+    {
+      id: "bdf59a7f9adaaefca96e2067bcde0b4b14dbce88",
+      name: "vds-button-ghost-surface-active"
+    },
+    {
+      id: "2bc4f9d00f8cb3581710216aa6848811bf9eef58",
+      name: "vds-button-danger-surface"
+    },
+    {
+      id: "f2cb2e4f91d1458eed575247a72aa4987c7c50ab",
+      name: "vds-button-danger-surface-soft"
+    },
+    {
+      id: "e2cbdddabfd70090a299dc2bd180af75c27f91d6",
+      name: "vds-button-danger-surface-ghost"
+    },
+    {
+      id: "f3a98f35ac8413a3d9bfe5a71a0f8cc6c7d81b27",
+      name: "vds-button-disabled-surface"
+    },
+    {
+      id: "0e6f54eef0576a526a76507de09b52dbce5ae543",
+      name: "vds-button-accent-surface-reverse"
+    },
+    {
+      id: "57f8ce396f251e40e83235e5b490a2db8a445baa",
+      name: "vds-button-primary-surface-reverse"
+    },
+    {
+      id: "56e17493f3fed03f940f70991ae08d3f68173716",
+      name: "vds-button-default-surface-reverse"
+    },
+    {
+      id: "879387b947b6372dfe2974a2da439994670652a8",
+      name: "vds-button-link-surface-reverse"
+    },
+    {
+      id: "a0565562201590b2bb0c292254b222f4b7045784",
+      name: "vds-button-link-surface-hover-reverse"
+    },
+    {
+      id: "a874b72b60cdf357e848aa6d3b5fcd977a757658",
+      name: "vds-button-link-surface-active-reverse"
+    },
+    {
+      id: "24d87b6f8321371aa0dc53ff9b044e7445419e33",
+      name: "vds-button-ghost-surface-reverse"
+    },
+    {
+      id: "2f484c4f67ec0f1d9ab653125dd4a24f178cfaf7",
+      name: "vds-button-ghost-surface-hover-reverse"
+    },
+    {
+      id: "0731c01fc592ad973bff0592f09e28c2e8441eef",
+      name: "vds-button-ghost-surface-active-reverse"
+    },
+    {
+      id: "127cc028d98a375b8524b35c9bdac7542a7d580c",
+      name: "vds-button-disabled-surface-reverse"
+    },
+    {
+      id: "4045936a02a22160da12e1c3ca14a310c84800d5",
+      name: "vds-button-danger-surface-reverse"
+    },
+    {
+      id: "e09d82a44b2e9ff7a9efb798a685fa2f1b566ea9",
+      name: "vds-button-danger-surface-soft-reverse"
+    },
+    {
+      id: "d62af452b02045a48073c5a2972ba456411b9d3b",
+      name: "vds-button-danger-surface-ghost-reverse"
+    },
+    {
+      id: "f8ae3ff438c3054cbeeeab13f1a60a6be4211d98",
+      name: "vds-button-group-surface-selected"
+    },
+    {
+      id: "ac3e3bc2c086bce279494afa6d1fd472a9f20f90",
+      name: "vds-badge-success-surface"
+    },
+    {
+      id: "a96797e5e98e4ce9d7b91daac70690910207a5ea",
+      name: "vds-badge-success-surface-reverse"
+    },
+    {
+      id: "54c20123db9b2211ecfa5e33814a572b10c023f8",
+      name: "vds-badge-warning-surface"
+    },
+    {
+      id: "b2263c6275487d4f808c121378e41742279133aa",
+      name: "vds-badge-warning-surface-reverse"
+    },
+    {
+      id: "2a6296fc1cd9378d52f3fc161af86175637e7ef0",
+      name: "vds-badge-critical-surface"
+    },
+    {
+      id: "ca95d413d540fae5dc77c352d76c21862921f6c6",
+      name: "vds-badge-critical-surface-reverse"
+    },
+    {
+      id: "473eb13af59caefca3cabda66d0520f08e7f00ba",
+      name: "vds-badge-info-surface"
+    },
+    {
+      id: "02c0b4f047add4469e098502329c18ba0f7e8fb8",
+      name: "vds-badge-info-surface-reverse"
+    },
+    {
+      id: "200fe2592aa100084e17b5c1d3e5b1ad6c09fbb9",
+      name: "vds-badge-neutral-surface"
+    },
+    {
+      id: "08f004c82f4ea859979a5abac236e6ff066efaae",
+      name: "vds-badge-neutral-surface-reverse"
+    },
+    {
+      id: "55c6cc066f09c1b979c427053267aed019d9457c",
+      name: "vds-chip-surface"
+    },
+    {
+      id: "89dcef06bf137fb01cdc61405fb55fa48bd6ca52",
+      name: "vds-chip-surface-hover"
+    },
+    {
+      id: "c5292bb519d04580ef7f42605a54c75bdee4b05b",
+      name: "vds-chip-surface-active"
+    },
+    {
+      id: "764421e1e7f90f243413e4c9f9fe990780058d60",
+      name: "vds-form-control-surface-unselected"
+    },
+    {
+      id: "507d3aeb271afff1a32e190ea5072a186cbed9a8",
+      name: "vds-form-control-surface-disabled"
+    },
+    {
+      id: "2a7aee0bc7108e1b389d3bb4e3bc2475fb02aed8",
+      name: "vds-form-control-surface-selected"
+    },
+    {
+      id: "1ca1681bbd407f5e27742610a6337783bee5fe30",
+      name: "vds-input-surface"
+    },
+    {
+      id: "bccc128c8fce042f942dcf6191f6cc87b608a216",
+      name: "vds-input-surface-activated"
+    },
+    {
+      id: "5b66c647b1edcbfde54c84d7af6b5299c10c5c66",
+      name: "vds-input-surface-disabled"
+    },
+    {
+      id: "a5239e866b40bb1bdd4d4750b27e9c8caf4c6c26",
+      name: "vds-input-readonly-surface"
+    },
+    {
+      id: "5ca98022631af239fb9c6b0ecac886bea363217b",
+      name: "vds-input-ghost-surface"
+    },
+    {
+      id: "8f5825a3c00b97fb88aa8a29bcddfccfe1de4f56",
+      name: "vds-input-error-surface"
+    },
+    {
+      id: "40175bd55dda9521ff31b42092737a53295b626b",
+      name: "vds-input-ghost-surface-hover"
+    },
+    {
+      id: "bfe9f571d257e6ae66160ac69f1bdaf7de28417a",
+      name: "vds-input-ghost-surface-disabled"
+    },
+    {
+      id: "b095c4182058041debab7eec9595721d75af1e48",
+      name: "vds-popover-surface"
+    },
+    {
+      id: "178983b377bf61850dad99eb775007e8b114fd9a",
+      name: "vds-popover-item-surface-hover"
+    },
+    {
+      id: "2e92f18ad464efd7f29b6b868ba549791f6990a9",
+      name: "vds-popover-item-surface-active"
+    },
+    {
+      id: "92ebf2d0cdd86435f276ab8194a7029c50f5ddd8",
+      name: "vds-popover-item-surface-selected"
+    },
+    {
+      id: "f94014e57317c6392b9691c232621822e2222319",
+      name: "vds-popover-item-surface-selected-hover"
+    },
+    {
+      id: "78d17b46fc76c5f24da9bb0b382808bddd0a4ff2",
+      name: "vds-popover-footer-surface"
+    },
+    {
+      id: "21c295f18a0f1c9f9a4560d91c22a8d68048517c",
+      name: "vds-table-surface"
+    },
+    {
+      id: "8f4ef1cfedcc43fbbb297527744fa17b1f1249b0",
+      name: "vds-table-surface-hover"
+    },
+    {
+      id: "a295e58a1e1715f0993cab62a7f37b11b515f899",
+      name: "vds-table-surface-zebra"
+    },
+    {
+      id: "a048a365ca7c90c4ab59b42122331b951a50497a",
+      name: "vds-table-footer-surface"
+    },
+    {
+      id: "5414bc50c5b53773b1674d8379e6b193a26b203f",
+      name: "vds-table-header-surface"
+    },
+    {
+      id: "8c97ff32d9b4278c72c369038e77132969b4ac47",
+      name: "vds-table-header-surface-hover"
+    },
+    {
+      id: "3e6e268160734ae373a6ff1fc1134996572d5209",
+      name: "vds-table-surface-selected"
+    },
+    {
+      id: "7abde947754934ce07436637591e015d3f030425",
+      name: "vds-table-surface-selected-hover"
+    },
+    {
+      id: "313c73d6853369c97ce014e421fe4ac818125107",
+      name: "vds-tag-surface"
+    },
+    {
+      id: "2ed057c971ae25a38f26f34ef509536b817f57ac",
+      name: "vds-tag-surface-el8"
+    },
+    {
+      id: "a14c2305859414e4a11042fc4ad7607fdd3d57e7",
+      name: "vds-toggle-surface-off"
+    },
+    {
+      id: "e4e242b51115235a3e8724a2fa8048ac5df38300",
+      name: "vds-toggle-surface-on"
+    },
+    {
+      id: "b438576d3c06f230658c0c5bc5e6f2411a8b82b4",
+      name: "vds-toggle-surface-disabled"
+    },
+    {
+      id: "6316d0fbc812f7f1b3a5310b73304e14b1daec02",
+      name: "vds-tooltip-surface"
+    },
+    {
+      id: "560c1016dc4778665912363555236c2d8b458264",
+      name: "vds-unavailable-surface"
+    },
+    {
       id: "61da5db3b56ee77f880916443649c676b9d62354",
       name: "vds-floating-toolbar-surface"
     }
@@ -829,8 +2015,164 @@ export const categorizedTokens: TokenGroup = {
       name: "vds-intent-neutral-border-color-reverse"
     },
     {
+      id: "20f9426692b39ad1648974ff646a6193b8d5d0ce",
+      name: "vds-button-disabled-border-color"
+    },
+    {
+      id: "33f1b3c77f0d0bd780af88236402bfa015091d19",
+      name: "vds-button-group-border-color"
+    },
+    {
+      id: "7bf56b99cef08659a5feb28302207e42751aec05",
+      name: "vds-form-control-border-color-unselected"
+    },
+    {
+      id: "e1bfedb57b15fe9547eb1e40480316c532423772",
+      name: "vds-form-control-border-color-unselected-hover"
+    },
+    {
+      id: "b56133517389d0515299efda9e2ec7563d6567d6",
+      name: "vds-form-control-border-color-unselected-active"
+    },
+    {
+      id: "9dff576740ed170f66f3a1b0e77aba92d0ff26bd",
+      name: "vds-input-border-color"
+    },
+    {
+      id: "aecd78f2e64d587634205c17ac19b52494f36939",
+      name: "vds-input-border-color-hover"
+    },
+    {
+      id: "536607b04632371b283b6e3c4c343d1ea6092ae6",
+      name: "vds-input-border-color-disabled"
+    },
+    {
+      id: "c1c5e2b795f1c02f10ca1c272faadd2518603214",
+      name: "vds-input-readonly-border-color"
+    },
+    {
+      id: "52f61e08b70ff6e5ad1ffe64c95e4bc6b7101117",
+      name: "vds-input-ghost-border-color"
+    },
+    {
+      id: "7a55bb949304db0818a342594a2842e268e4b1fb",
+      name: "vds-input-error-border-color"
+    },
+    {
+      id: "abc273b9c1cdb17644fac427e613444005f0c2aa",
+      name: "vds-popover-footer-border-color"
+    },
+    {
+      id: "8c16dc14c0a6aec2d883604a66259a22aa811e6b",
+      name: "vds-table-border-color"
+    },
+    {
+      id: "6ddf4b0acc38123662b646b21abda16770267e7a",
+      name: "vds-table-border-color-hover"
+    },
+    {
+      id: "010d9e60375003e89369b57d1549abb49b58d9c5",
+      name: "vds-table-footer-border-color"
+    },
+    {
+      id: "cbb2e7c20b53c6a2a7576bbef9a50953fcf1330e",
+      name: "vds-table-footer-divider-border-color"
+    },
+    {
+      id: "1ef29ed8360bdb04bb6cef7133672dc0b4dc65c6",
+      name: "vds-table-header-border-color"
+    },
+    {
+      id: "a04d37010093b1d81d954c231e5142991f0c6e21",
+      name: "vds-table-header-border-color-active"
+    },
+    {
+      id: "2344f229a1fbb307309e87ad871fcdd2685d81bc",
+      name: "vds-table-border-color-selected"
+    },
+    {
+      id: "833adc74d31e35e58356de63067751b66406ad41",
+      name: "vds-table-selection-area-border-color"
+    },
+    {
+      id: "d1542562bed7042f0f34397bc14fa5cb9c5205fc",
+      name: "vds-table-expanded-row-border-color"
+    },
+    {
+      id: "c97634464bc12d47a0f20f7263f4b63b71dfeb5e",
+      name: "vds-toggle-border-color-disabled"
+    },
+    {
       id: "86431b662beefac9b42ab20c581d9a70ea4803c8",
       name: "vds-floating-toolbar-border"
+    }
+  ],
+  icon: [
+    {
+      id: "ec0e27342a1de8bbdfc563e45b8b0e5a6f047c13",
+      name: "vds-intent-success-icon-fill"
+    },
+    {
+      id: "094305c367cd58d29c836e805cf03fb3c1cdcd16",
+      name: "vds-intent-success-icon-fill-reverse"
+    },
+    {
+      id: "771b751f7a3b67b0f62afd10066d8d089b8d5e41",
+      name: "vds-intent-warning-icon-fill"
+    },
+    {
+      id: "b9b7fe65466901b170ee05064e1ff1c61cc653fd",
+      name: "vds-intent-warning-icon-fill-reverse"
+    },
+    {
+      id: "82ee42c594b2aa63b518851c0b38e311ad84b23d",
+      name: "vds-intent-danger-icon-fill"
+    },
+    {
+      id: "eeabc00bcc9de162fce3ee3a3d3570a983023aad",
+      name: "vds-intent-danger-icon-fill-reverse"
+    },
+    {
+      id: "767bc1aef997f6d21a67a8fda7ee8a72bf5b510f",
+      name: "vds-intent-info-icon-fill"
+    },
+    {
+      id: "e0bf5a15ad86649c112c8eb5abfeca12b79e2af3",
+      name: "vds-intent-info-icon-fill-reverse"
+    },
+    {
+      id: "ac6f01e5a8d2b91c8158baa8c6fa47f517193158",
+      name: "vds-intent-neutral-icon-fill"
+    },
+    {
+      id: "21c2ee4090ed9f33329fc3f9f80ba094a2ad2697",
+      name: "vds-intent-neutral-icon-fill-reverse"
+    },
+    {
+      id: "aa9e450887e5fb79c44f894c65df1cae8e073425",
+      name: "vds-input-icon-fill"
+    },
+    {
+      id: "0d715177e5dd2d35b2b6b73511c7312d7e755caf",
+      name: "vds-input-icon-fill-disabled"
+    },
+    {
+      id: "a37a36c2486dd3c9d6cc54f7e7e0f9fbb419f09d",
+      name: "vds-input-icon-meta-fill"
+    },
+    {
+      id: "f7122342c02a5bb5b8fd7561e937b6ff866b439b",
+      name: "vds-popover-footer-icon-color"
+    }
+  ],
+  fill: [
+    {
+      id: "1557f7cfc6ecac71f9d5e4adf7c1199db365f1d2",
+      name: "vds-input-button-fill"
+    },
+    {
+      id: "267e8ac3098ecfd422e8ccc0b66037d3a311d2f3",
+      name: "vds-input-button-fill-disabled"
     }
   ]
 };

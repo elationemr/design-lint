@@ -9,6 +9,7 @@ import {
 } from "./lintingFunctions";
 import checkMultipleFills from "./elation-functions/generic/checkMultipleFills";
 import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
+import checkInvalidShapeFills from "./elation-functions/shapes/checkInvalidShapeFills";
 import vitalChecks from "./elation-functions/generic/vitalChecks";
 
 figma.showUI(__html__, { width: 360, height: 580 });
@@ -359,6 +360,7 @@ figma.ui.onmessage = msg => {
 
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
 
     checkRadius(node, errors, borderRadiusArray);
     checkEffects(node, errors);
@@ -374,6 +376,7 @@ figma.ui.onmessage = msg => {
 
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
 
     return errors;
   }
@@ -394,6 +397,7 @@ figma.ui.onmessage = msg => {
 
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
 
     checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -409,6 +413,7 @@ figma.ui.onmessage = msg => {
 
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
     // For some reason section strokes aren't accessible via the API yet.
     // checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -445,6 +450,7 @@ figma.ui.onmessage = msg => {
 
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
 
     checkRadius(node, errors, borderRadiusArray);
     checkStrokes(node, errors);
@@ -462,6 +468,7 @@ figma.ui.onmessage = msg => {
 
       checkMultipleFills(node, errors);
       vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
 
       checkStrokes(node, errors);
       checkEffects(node, errors);
@@ -477,6 +484,7 @@ figma.ui.onmessage = msg => {
 
     checkMultipleFills(node, errors);
     vitalChecks(node, errors);
+    checkInvalidShapeFills(node, errors);
     checkStrokes(node, errors);
     checkEffects(node, errors);
 
