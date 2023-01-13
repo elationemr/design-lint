@@ -1,8 +1,8 @@
 import { createErrorObject } from "../../lintingFunctions";
 import normalizeStyleKey from "../utils/normalizeStyleKey";
-import { categorizedTokens, Token } from "../../data/allColorTokens";
+import { categorizedTokens } from "../../data/allColorTokens";
 import getStyleName from "../utils/getStyleName";
-import { NormalizedFillStyleID } from "../../types/figma";
+import { NormalizedFillStyleID, Token } from "../../types/figma";
 
 /**
  * Check that text layers only use valid (i.e., intended for text) color tokens.

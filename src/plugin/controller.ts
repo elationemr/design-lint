@@ -10,6 +10,8 @@ import {
 import checkDeprecatedComponents from "./elation-functions/components/checkDeprecatedComponents";
 import checkInvalidShapeFills from "./elation-functions/shapes/checkInvalidShapeFills";
 import checkMultipleFills from "./elation-functions/generic/checkMultipleFills";
+import checkMultipleStyles from "./elation-functions/generic/checkMultipleStyles";
+import checkFontTokens from "./elation-functions/textStyles/checkFontTokens";
 import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
 import vitalChecks from "./elation-functions/generic/vitalChecks";
 
@@ -438,10 +440,14 @@ figma.ui.onmessage = msg => {
     // Take a look at line 122 in lintingFunction.ts for an example.
     // customCheckTextFills(node, errors);
     checkMultipleFills(node, errors);
+    checkMultipleStyles(node, errors);
 
     vitalChecks(node, errors);
     if (node.fillStyleId !== "") {
       invalidTextFills(node, errors);
+    }
+    if (node.textStyleId !== "" && typeof node.textStyleId !== "symbol") {
+      checkFontTokens(node, errors);
     }
 
     checkEffects(node, errors);

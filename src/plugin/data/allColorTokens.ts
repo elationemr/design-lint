@@ -1,18 +1,4 @@
-export type Token = {
-  /**
-   * Figma's unique style IDs.
-   * - All IDs are assumed to be normalized (e.g., removed 'S:').
-   */
-  id: string;
-  /**
-   * kebab-case VDS token name.
-   * - vds-gray-100
-   */
-  name: string;
-};
-export type TokenGroup = {
-  [key: string]: ReadonlyArray<Token>;
-};
+import { Token, TokenGroup } from "../types/figma";
 
 export const allColorTokens: TokenGroup = {
   elation: [
