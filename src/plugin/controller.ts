@@ -13,7 +13,7 @@ import checkDeprecatedColors from "./elation-functions/generic/checkDeprecatedCo
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
-let borderRadiusArray = [0, 2, 4, 8, 16, 24, 32];
+let borderRadiusArray = [0, 2, 4, 8, 16, 24, 32, 999];
 let originalNodeTree: readonly any[] = [];
 let lintVectors = false;
 
@@ -136,7 +136,7 @@ figma.ui.onmessage = msg => {
   }
 
   if (msg.type === "reset-border-radius") {
-    borderRadiusArray = [0, 2, 4, 8, 16, 24, 32];
+    borderRadiusArray = [0, 2, 4, 8, 16, 24, 32, 999];
     figma.clientStorage.setAsync("storedRadiusValues", []);
 
     figma.ui.postMessage({
@@ -356,6 +356,12 @@ figma.ui.onmessage = msg => {
     // }
 
     checkFills(node, errors);
+
+    checkMultipleFills(node, errors);
+    if (node.fillStyleId !== "") {
+      checkDeprecatedColors(node, errors);
+    }
+
     checkRadius(node, errors, borderRadiusArray);
     checkEffects(node, errors);
     checkStrokes(node, errors);
@@ -367,6 +373,11 @@ figma.ui.onmessage = msg => {
     let errors = [];
 
     checkFills(node, errors);
+
+    checkMultipleFills(node, errors);
+    if (node.fillStyleId !== "") {
+      checkDeprecatedColors(node, errors);
+    }
 
     return errors;
   }
@@ -384,6 +395,12 @@ figma.ui.onmessage = msg => {
     let errors = [];
 
     checkFills(node, errors);
+
+    checkMultipleFills(node, errors);
+    if (node.fillStyleId !== "") {
+      checkDeprecatedColors(node, errors);
+    }
+
     checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
     checkEffects(node, errors);
@@ -395,6 +412,11 @@ figma.ui.onmessage = msg => {
     let errors = [];
 
     checkFills(node, errors);
+
+    checkMultipleFills(node, errors);
+    if (node.fillStyleId !== "") {
+      checkDeprecatedColors(node, errors);
+    }
     // For some reason section strokes aren't accessible via the API yet.
     // checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -428,6 +450,12 @@ figma.ui.onmessage = msg => {
     let errors = [];
 
     checkFills(node, errors);
+
+    checkMultipleFills(node, errors);
+    if (node.fillStyleId !== "") {
+      checkDeprecatedColors(node, errors);
+    }
+
     checkRadius(node, errors, borderRadiusArray);
     checkStrokes(node, errors);
     checkEffects(node, errors);
@@ -441,6 +469,12 @@ figma.ui.onmessage = msg => {
     // This can be enabled by the user in settings.
     if (lintVectors === true) {
       checkFills(node, errors);
+
+      checkMultipleFills(node, errors);
+      if (node.fillStyleId !== "") {
+        checkDeprecatedColors(node, errors);
+      }
+
       checkStrokes(node, errors);
       checkEffects(node, errors);
     }
@@ -452,6 +486,11 @@ figma.ui.onmessage = msg => {
     let errors = [];
 
     checkFills(node, errors);
+
+    checkMultipleFills(node, errors);
+    if (node.fillStyleId !== "") {
+      checkDeprecatedColors(node, errors);
+    }
     checkStrokes(node, errors);
     checkEffects(node, errors);
 
