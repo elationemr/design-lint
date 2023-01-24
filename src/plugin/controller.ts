@@ -8,10 +8,11 @@ import {
   // uncomment this as an example of a custom lint function ^
 } from "./lintingFunctions";
 import checkDeprecatedComponents from "./elation-functions/components/checkDeprecatedComponents";
+import checkDeprecatedInstance from "./elation-functions/components/checkDeprecatedInstance";
 import checkInvalidShapeFills from "./elation-functions/shapes/checkInvalidShapeFills";
-import checkMultipleFills from "./elation-functions/generic/checkMultipleFills";
-import checkMultipleStyles from "./elation-functions/generic/checkMultipleStyles";
+import errorMultipleFills from "./elation-functions/generic/errorMultipleFills";
 import checkFontTokens from "./elation-functions/textStyles/checkFontTokens";
+import hasMultipleStyles from "./elation-functions/utils/hasMultipleStyles";
 import invalidTextFills from "./elation-functions/textStyles/invalidTextFills";
 import vitalChecks from "./elation-functions/generic/vitalChecks";
 
@@ -363,11 +364,15 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    console.log("test component");
+    // Vital checks
     checkDeprecatedComponents(node, errors);
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
+    }
+    // end Vital checks
 
     checkRadius(node, errors, borderRadiusArray);
     checkEffects(node, errors);
@@ -381,11 +386,15 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    console.log("test variant");
+    // Vital checks
     checkDeprecatedComponents(node, errors);
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
+    }
+    // end Vital checks
 
     return errors;
   }
@@ -404,9 +413,14 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
+    // Vital checks
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
+    }
+    // end Vital checks
 
     checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -420,9 +434,6 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
     // For some reason section strokes aren't accessible via the API yet.
     // checkStrokes(node, errors);
     checkRadius(node, errors, borderRadiusArray);
@@ -433,22 +444,26 @@ figma.ui.onmessage = msg => {
   function lintTextRules(node) {
     let errors = [];
 
-    checkType(node, errors);
-    checkFills(node, errors);
-
     // We could also comment out checkFills and use a custom function instead
     // Take a look at line 122 in lintingFunction.ts for an example.
     // customCheckTextFills(node, errors);
-    checkMultipleFills(node, errors);
-    checkMultipleStyles(node, errors);
 
-    vitalChecks(node, errors);
-    if (node.fillStyleId !== "") {
-      invalidTextFills(node, errors);
+    // Vital checks
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      checkType(node, errors);
+      checkFills(node, errors);
+      vitalChecks(node, errors);
+
+      if (node.fillStyleId !== "") {
+        invalidTextFills(node, errors);
+      }
+      if (node.textStyleId !== "" && typeof node.textStyleId !== "symbol") {
+        checkFontTokens(node, errors);
+      }
     }
-    if (node.textStyleId !== "" && typeof node.textStyleId !== "symbol") {
-      checkFontTokens(node, errors);
-    }
+    // end Vital checks
 
     checkEffects(node, errors);
     checkStrokes(node, errors);
@@ -461,10 +476,15 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    checkDeprecatedComponents(node, errors);
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
+    // Vital checks
+    checkDeprecatedInstance(node, errors);
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
+    }
+    // end Vital checks
 
     checkRadius(node, errors, borderRadiusArray);
     checkStrokes(node, errors);
@@ -478,9 +498,14 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
+    // Vital checks
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
+    }
+    // end Vital checks
 
     checkRadius(node, errors, borderRadiusArray);
     checkStrokes(node, errors);
@@ -496,9 +521,14 @@ figma.ui.onmessage = msg => {
     if (lintVectors === true) {
       checkFills(node, errors);
 
-      checkMultipleFills(node, errors);
-      vitalChecks(node, errors);
-      checkInvalidShapeFills(node, errors);
+      // Vital checks
+      if (hasMultipleStyles(node)) {
+        errorMultipleFills(node, errors);
+      } else {
+        vitalChecks(node, errors);
+        checkInvalidShapeFills(node, errors);
+      }
+      // end Vital checks
 
       checkStrokes(node, errors);
       checkEffects(node, errors);
@@ -512,9 +542,15 @@ figma.ui.onmessage = msg => {
 
     checkFills(node, errors);
 
-    checkMultipleFills(node, errors);
-    vitalChecks(node, errors);
-    checkInvalidShapeFills(node, errors);
+    // Vital check
+    if (hasMultipleStyles(node)) {
+      errorMultipleFills(node, errors);
+    } else {
+      vitalChecks(node, errors);
+      checkInvalidShapeFills(node, errors);
+    }
+    // end Vital checks
+
     checkStrokes(node, errors);
     checkEffects(node, errors);
 

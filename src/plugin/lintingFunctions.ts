@@ -243,20 +243,20 @@ export function checkFills(node, errors) {
     (node.fills.length && node.visible === true) ||
     typeof node.fills === "symbol"
   ) {
-    let nodeFills = node.fills;
-    let fillStyleId = node.fillStyleId;
+    // let nodeFills = node.fills;
+    // let fillStyleId = node.fillStyleId;
 
-    if (typeof nodeFills === "symbol") {
-      return errors.push(
-        createErrorObject(node, "fill", "Missing fill style", "Mixed values")
-      );
-    }
+    // if (typeof nodeFills === "symbol") {
+    //   return errors.push(
+    //     createErrorObject(node, "fill", "Missing fill style", "Mixed values")
+    //   );
+    // }
 
-    if (typeof fillStyleId === "symbol") {
-      return errors.push(
-        createErrorObject(node, "fill", "Missing fill style", "Mixed values")
-      );
-    }
+    // if (typeof fillStyleId === "symbol") {
+    //   return errors.push(
+    //     createErrorObject(node, "fill", "Missing fill style", "Mixed values")
+    //   );
+    // }
 
     if (
       node.fillStyleId === "" &&
