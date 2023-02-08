@@ -1,3 +1,15 @@
+# Elation: Distributing Tedspector code
+
+1. Build the app with `yarn build`. 
+1. Copy `manifest.json` and the `./dist` directory to a new folder. 
+   Keep the hierarchy. The manifest assumes that dist code is in a sub 
+  folder. 
+1. Zip up the new folder. 
+1. Update zip file in [pinned Slack post](https://elation.slack.com/archives/G01CA4ABEKX/p1675870178086929).
+1. Update zip file in [Confluence Figma page](https://elationhealth.atlassian.net/wiki/spaces/DES/pages/2334884064/Figma).
+
+---
+
 # Design Lint
 
 ![Design Lint Gif Example](https://github.com/destefanis/design-lint/blob/master/assets/lint-example.gif)
