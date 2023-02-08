@@ -10,7 +10,6 @@ import { NormalizedFillStyleID, Token } from "../../types/figma";
 export default function checkInvalidShapeFills(node, errors) {
   const invalidColorTokens: ReadonlyArray<Token> = [
     ...categorizedTokens.border,
-    ...categorizedTokens.icon,
     ...categorizedTokens.text
   ];
   let nodeFillStyle: NormalizedFillStyleID = normalizeStyleKey(
