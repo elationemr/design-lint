@@ -33,7 +33,7 @@ function EmptyState(props) {
           className="button button--primary button--full"
           onClick={onRunApp}
         >
-          Run Design Lint
+          Tedspect Selection
         </button>
       </div>
     </motion.div>
