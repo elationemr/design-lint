@@ -18,7 +18,7 @@ import vitalChecks from "./elation-functions/generic/vitalChecks";
 
 figma.showUI(__html__, { width: 360, height: 580 });
 
-let borderRadiusArray = [0, 2, 4, 8, 16, 24, 32, 999];
+let borderRadiusArray = [0, 2, 4, 8, 16, 24, 32, 100, 999];
 let originalNodeTree: readonly any[] = [];
 let lintVectors = false;
 
@@ -259,6 +259,9 @@ figma.ui.onmessage = msg => {
     } else {
       let nodes = figma.currentPage.selection;
       let firstNode = [];
+
+      // Clears all ignored errors every time the app is initialized.
+      figma.clientStorage.setAsync("storedErrorsToIgnore", []);
 
       firstNode.push(figma.currentPage.selection[0]);
 
